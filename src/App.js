@@ -1,16 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //pages & componnents
-import Main from "./pages/main";
-
-//styles
-import './App.scss';
+import Authentication from "./pages/authentication/authentication";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />}></Route>
+        <Route path="/authentication" element={<Authentication />}></Route>
       </Routes>
     </BrowserRouter>
   )
