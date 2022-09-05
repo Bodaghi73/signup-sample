@@ -1,6 +1,7 @@
 //pages & components
 import BackToHome from "../../components/backToHome/backToHome";
 import Subscription from "../../components/subscription/subscription";
+import Forms from "../../components/forms/forms";
 
 //styles
 import './authentication.scss';
@@ -11,6 +12,7 @@ function Authentication() {
     return (
         <div className="authentication">
             <div className='authentication__content'>
+                <Forms></Forms>
                 <img src={backgroundImage} alt=""></img>
                 <Subscription></Subscription>
             </div>
