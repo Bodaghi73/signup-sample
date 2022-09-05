@@ -13,7 +13,7 @@ function Authentication() {
         <div className="authentication">
             <div className='authentication__content'>
                 <Forms></Forms>
-                <img src={backgroundImage} alt=""></img>
+                <img className="authentication__background" src={backgroundImage} alt=""></img>
                 <Subscription></Subscription>
             </div>
             <div className='authentication__back'>
