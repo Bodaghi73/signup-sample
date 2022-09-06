@@ -1,40 +1,36 @@
 @import '../../assets/styles/variables.scss';
 
 .forms {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba($color: #ffffff, $alpha: 0.6);
     border-radius: 20px;
+    z-index: 1;
 
     &__tabs {
         width: 100%;
         display: flex;
         justify-content: space-around;
         border-radius: 0 0 20px 20px;
-        border-bottom: 4px solid var(--background-theme-color);
+        border-bottom: 4px solid var(--theme-color);
+    }
 
-        &--signUp,
-        &--signIn {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            padding: 25px 0;
-            border-radius: 20px;
+    &__tab {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        border-radius: 20px;
+    }
 
-            a {
-                text-decoration: none;
-                color: var(--background-theme-color);
-                font-size: 1.25rem;
-                font-weight: bold;
-            }
-        }
-
-        &--signUp {
-            background-color: var(--light-color);
-        }
+    &__link {
+        text-decoration: none;
+        color: var(--theme-color);
+        font-size: 1.25rem;
+        font-weight: bold;
     }
 
     &__form {
@@ -59,11 +55,11 @@
                 outline: none;
 
                 &:focus {
-                    border: 1px solid var(--background-theme-color);
+                    border: 1px solid var(--theme-color);
                 }
             }
 
-            img{
+            img {
                 width: 25px;
                 height: 25px;
                 position: absolute;
@@ -88,7 +84,7 @@
                 padding: 15px 50px;
                 margin: 15px auto 0;
                 color: var(--light-color);
-                background-color: var(--background-theme-color);
+                background-color: var(--theme-color);
                 border: none;
                 border-radius: 10px;
                 outline: none;
@@ -117,28 +113,29 @@
         }
     }
 
-    &__google {
+    &__google-account {
         margin: 50px 0;
-
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-left: 15px;
-            color: var(--light-color);
-            background-color: var(--red-dark-color);
-            text-decoration: none;
-            border-radius: 15px;
-            font-size: 0.875rem;
-
-            img {
-                width: 30px;
-                height: 30px;
-                padding: 12px;
-                margin-left: 10px;
-                background-color: var(--light-color);
-                border-radius: 10px;
-            }
-        }
     }
+
+    &__account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        color: var(--light-color);
+        background-color: var(--red-dark-color);
+        text-decoration: none;
+        border-radius: 15px;
+        font-size: 0.875rem;
+    }
+
+    &__logo {
+        width: 30px;
+        height: 30px;
+        padding: 12px;
+        margin-left: 10px;
+        background-color: var(--light-color);
+        border-radius: 10px;
+    }
+
 }

@@ -5,8 +5,8 @@ import arrowLeft from "../../assets/imgs/arrow-left.svg";
 
 function BackToHome() {
     return (
-        <div className='backToHome'>
-            <a className='backToHome__link' href='/'>
+        <div className='back-to-home'>
+            <a className='back-to-home__link' href='/'>
                 <img src={arrowLeft} alt=""></img>
                 بازگشت به صفحه اصلی
             </a>
