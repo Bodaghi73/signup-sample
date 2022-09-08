@@ -1,0 +1,81 @@
+@import '../../assets/styles/variables.scss';
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: 30px 0;
+        font-size: 1rem;
+    }
+
+    &__input {
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: var(--background-input-color);
+        border: none;
+        border-radius: 10px;
+        outline: none;
+
+        &:focus {
+            border: 1px solid var(--theme-color);
+        }
+    }
+
+    &__eye {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 227px;
+        left: 15px;
+        opacity: 1;
+    }
+
+    select {
+        width: 20%;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        position: absolute;
+        top: 83px;
+        left: 0;
+    }
+
+    &__submit {
+        width: 60%;
+        padding: 15px 50px;
+        margin: 15px auto 0;
+        color: var(--light-color);
+        background-color: var(--theme-color);
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--red-hover-color);
+        }
+    }
+
+    &__pass {
+        margin: 15px auto 0;
+        text-decoration: none;
+        color: var(--dark-color);
+
+        &:hover {
+            color: var(--red-hover-text-color);
+        }
+    }
+
+    &--verificationCode {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            width: 10%;
+            text-align: center;
+        }
+    }
+}

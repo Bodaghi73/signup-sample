@@ -4,59 +4,58 @@
     padding: 45px;
     border: 3px dashed var(--light-color);
     border-radius: 10px;
+    z-index: 1;
 
-    &__caption {
-        &--titr {
-            padding-bottom: 30px;
-            color: var(--light-color);
-            font-size: 1.125rem;
-        }
+    &__title {
+        margin-bottom: 30px;
+        color: var(--light-color);
+        font-size: 1.125rem;
+    }
 
-        &--items {
-            display: flex;
-            flex-direction: column;
-            color: var(--light-color);
-            font-size: 1.25rem;
-            font-weight: bold;
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
 
-            span {
-                position: relative;
-                margin-bottom: 15px;
+    &__item {
+        position: relative;
+        margin-bottom: 15px;
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: bold;
 
-                &::before {
-                    content: "";
-                    width: 12px;
-                    height: 12px;
-                    background-color: var(--green-color);
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 14px;
-                    right: -23px;
-                }
-            }
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: var(--green-color);
+            border-radius: 50%;
+            position: absolute;
+            top: 14px;
+            right: -23px;
         }
     }
 
-    &__button {
+    &__buy {
         display: flex;
         justify-content: center;
         margin-top: 40px;
+    }
 
-        button {
-            padding: 10px 50px;
-            background-color: var(--green-color);
-            border: none;
-            border-radius: 10px;
+    &__button {
+        padding: 10px 50px;
+        background-color: var(--green-color);
+        border: none;
+        border-radius: 10px;
 
-            &:hover {
-                background-color: var(--green-hover-color);
-            }
-
-            a {
-                color: var(--light-color);
-                text-decoration: none;
-                font-size: 1.25rem;
-            }
+        &:hover {
+            background-color: var(--green-hover-color);
         }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--light-color);
+        font-size: 1.25rem;
     }
 }

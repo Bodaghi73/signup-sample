@@ -5,11 +5,11 @@ import arrowLeft from "../../assets/imgs/arrow-left.svg";
 
 function BackToHome() {
     return (
-        <div className='backToHome'>
-            <button>
+        <div className='back-to-home'>
+            <a className='back-to-home__link' href='/'>
                 <img src={arrowLeft} alt=""></img>
                 بازگشت به صفحه اصلی
-            </button>
+            </a>
         </div>
     );
 }

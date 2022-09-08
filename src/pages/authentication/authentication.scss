@@ -1,17 +1,20 @@
 @import '../../assets/styles/variables.scss';
 
 .authentication {
+    position: relative;
     &__content {
-        padding: 90px 20px 10px 20px;
+        min-height: 670px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--background-theme-color);
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 90px 200px;
+        background-color: var(--theme-color);
         border-radius: 0 0 30px 30px;
+    }
 
-        img {
-            width: 900px;
-            height: 755px;
-        }
+    &__background{
+        position: absolute;
+        top: 5%;
+        left: 26%;
     }
 }

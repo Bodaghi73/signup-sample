@@ -1,5 +1,5 @@
 //styles
-import './forms.scss';
+import './form.scss';
 
 function VerificationCode() {
     return (
