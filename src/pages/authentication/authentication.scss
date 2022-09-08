@@ -3,6 +3,7 @@
 .authentication {
     position: relative;
     &__content {
+        min-height: 670px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;

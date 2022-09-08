@@ -1,6 +1,6 @@
 //pages & component
-import SignUp from './signUp';
-// import SignIn from './signInEmail';
+// import SignUp from './signUp';
+import SignIn from './signInEmail';
 // import SignInNumber from './signInNumber';
 // import VerificationCode from './verificationCode';
 
@@ -21,8 +21,8 @@ function Forms() {
                 </div>
             </div>
             <div className='forms__form'>
-                <SignUp></SignUp>
-                {/* <SignIn></SignIn> */}
+                {/* <SignUp></SignUp> */}
+                <SignIn></SignIn>
                 {/* <SignInNumber></SignInNumber> */}
                 {/* <VerificationCode></VerificationCode> */}
             </div>
