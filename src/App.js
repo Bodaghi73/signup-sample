@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css';
 
 //pages & componnents
 import Authentication from "./pages/authentication/authentication";
