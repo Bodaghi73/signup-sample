@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables.scss';
+
+.tabs {
+    width: 100%;
+    display: flex;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 4px solid var(--theme-color);
+
+    &__tab {
+        width: 50%;
+    }
+    
+    &__link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        border-radius: 20px;
+        text-decoration: none;
+        color: var(--theme-color);
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        &.active{
+            background-color: var(--light-color);
+        }
+    }
+}

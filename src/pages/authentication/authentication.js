@@ -1,7 +1,10 @@
+import { Outlet } from "react-router-dom";
+
 //pages & components
-import BackToHome from "../../components/backToHome/backToHome";
+import BackToHome from "../../components/back-to-home/back-to-home";
 import Subscription from "../../components/subscription/subscription";
-import Forms from "../../components/forms/forms";
+import Tabs from '../../components/tabs/tabs';
+import GoogleLink from '../../components/google-account/google-account';
 
 //styles
 import './authentication.scss';
@@ -12,7 +15,11 @@ function Authentication() {
     return (
         <div className="authentication">
             <div className='authentication__content'>
-                <Forms></Forms>
+                <div className="authentication__forms">
+                    <Tabs></Tabs>
+                    <Outlet />
+                    <GoogleLink></GoogleLink>
+                </div>
                 <img className="authentication__background" src={backgroundImage} alt=""></img>
                 <Subscription></Subscription>
             </div>

@@ -1,5 +1,5 @@
 //styles
-import './backToHome.scss';
+import './back-to-home.scss';
 
 import arrowLeft from "../../assets/imgs/arrow-left.svg";
 
