@@ -1,0 +1,163 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/media.scss';
+
+.form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: 30px 0;
+        font-size: 1rem;
+
+        @include breakpoint(ultra) {
+            margin: 20px 0;
+        }
+
+        @include breakpoint(xlarge) {
+            margin: 20px 0;
+        }
+
+        @include breakpoint(large) {
+            margin: 15px 0;
+        }
+    }
+
+    &__input {
+        width: 95%;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: var(--background-input-color);
+        border: none;
+        border-radius: 10px;
+        outline: none;
+
+        &:focus:not(.input-select) {
+            border: 1px solid var(--theme-color);
+        }
+
+        @include breakpoint(ultra) {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        @include breakpoint(xlarge) {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        @include breakpoint(large) {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__eye {
+        position: relative;
+
+        &::after {
+            content: url(../../assets/imgs/eye.svg);
+            position: absolute;
+            top: 14px;
+            left: 0;
+        }
+    }
+
+    &__country {
+        display: flex;
+        background-color: var(--background-input-color);
+        border-radius: 10px;
+
+        &:focus-within {
+            border: 1px solid var(--theme-color);
+        }
+    }
+
+    &__select {
+        width: 35%;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    &__option {
+        font-size: 1.25rem;
+    }
+
+    &__submit {
+        width: 60%;
+        padding: 15px 50px;
+        margin: 15px auto 0;
+        color: var(--light-color);
+        background-color: var(--theme-color);
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--red-hover-color);
+        }
+
+        @include breakpoint(ultra) {
+            margin-top: 10px;
+        }
+
+        @include breakpoint(xlarge) {
+            margin-top: 10px;
+        }
+
+        @include breakpoint(large) {
+            margin-top: 10px;
+        }
+    }
+
+    &__link {
+        margin: 15px auto 0;
+        color: var(--dark-color);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--red-hover-text-color);
+        }
+    }
+
+    .input-select {
+        margin: 0;
+    }
+
+    &__verificationCode {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    &__input-verificationCode {
+        width: 10%;
+        text-align: center;
+        padding: 15px;
+        background-color: var(--background-input-color);
+        border: none;
+        border-radius: 10px;
+        outline: none;
+
+        &:focus {
+            border: 1px solid var(--theme-color);
+        }
+    }
+
+    &__confirmation {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__timer {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            color: var(--red-hover-text-color);
+        }
+    }
+}

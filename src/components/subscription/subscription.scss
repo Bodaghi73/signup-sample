@@ -1,0 +1,110 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/media.scss';
+
+.subscription {
+    padding: 45px;
+    border: 3px dashed var(--light-color);
+    border-radius: 10px;
+    z-index: 1;
+
+    @include breakpoint(ultra) {
+        padding: 40px;
+    }
+
+    @include breakpoint(xlarge) {
+        padding: 35px;
+    }
+
+    @include breakpoint(large) {
+        padding: 25px 30px;
+    }
+
+    @include breakpoint(medium) {
+        width: 60%;
+    }
+
+    @include breakpoint(small) {
+        width: 65%;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        color: var(--light-color);
+        font-size: 1.125rem;
+
+        @include breakpoint(large) {
+            font-size: 1rem;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 15px;
+        color: var(--light-color);
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: var(--green-color);
+            border-radius: 50%;
+            position: absolute;
+            top: 14px;
+            right: -23px;
+        }
+
+        @include breakpoint(xlarge) {
+            font-size: 1.15rem;
+        }
+
+        @include breakpoint(large) {
+            font-size: 1rem;
+        }
+    }
+
+    &__buy {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        @include breakpoint(xlarge) {
+            font-size: 1.15rem;
+        }
+
+        @include breakpoint(large) {
+            margin-top: 20px;
+        }
+    }
+
+    &__button {
+        padding: 10px 50px;
+        background-color: var(--green-color);
+        border: none;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: var(--green-hover-color);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--light-color);
+        font-size: 1.25rem;
+
+        @include breakpoint(xlarge) {
+            font-size: 1.15rem;
+        }
+
+        @include breakpoint(large) {
+            font-size: 1rem;
+        }
+    }
+}
