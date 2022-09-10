@@ -1,0 +1,42 @@
+@mixin breakpoint($size) {
+    @if ($size==xultra) {
+        @media (min-width: 1600px) {
+            @content
+        }
+    };
+    @if ($size==ultra) {
+        @media (min-width: 1400px) and (max-width:1600px) {
+            @content
+        }
+    };
+    @if ($size==xlarge) {
+        @media (min-width: 1200px) and (max-width:1400px) {
+            @content
+        }
+    };
+
+    @if ($size==large) { 
+        @media (min-width: 992px) and (max-width: 1200px) {
+            @content
+        }
+    };
+
+    @if ($size==medium) {
+        @media (min-width: 768px) and (max-width: 992px) {
+            @content
+        }
+    };
+
+    @if ($size==small) {
+        @media (min-width: 576px) and (max-width: 768px) {
+            @content
+        }
+    };
+
+    @if ($size==xsmall) {
+        @media (max-width: 576px) {
+            @content
+        }
+    };
+
+}

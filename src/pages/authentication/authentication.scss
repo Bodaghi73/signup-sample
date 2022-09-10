@@ -1,20 +1,40 @@
 @import '../../assets/styles/variables.scss';
+@import '../../assets/styles/media.scss';
 
 .authentication {
     position: relative;
 
     &__content {
-        min-height: 670px;
+        min-height: 600px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 90px 200px;
+        padding: 90px 50px;
         background-color: var(--theme-color);
         border-radius: 0 0 30px 30px;
+
+        @include breakpoint(large) {
+            height: 600px;
+        }
+
+        @include breakpoint(medium) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include breakpoint(small) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include breakpoint(xsmall) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__forms {
-        width: 35%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,11 +42,73 @@
         background-color: rgba($color: #ffffff, $alpha: 0.6);
         border-radius: 20px;
         z-index: 1;
+
+        @include breakpoint(xlarge) {
+            width: 35%;
+        }
+
+        @include breakpoint(large) {
+            width: 40%;
+        }
+
+        @include breakpoint(medium) {
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint(small) {
+            width: 90%;
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint(xsmall) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
     }
 
     &__background {
+        width: 900px;
+        height: 750px;
         position: absolute;
         top: 5%;
         left: 26%;
+
+        @include breakpoint(ultra) {
+            width: 800px;
+            height: 650px;
+            left: 23%;
+        }
+
+        @include breakpoint(xlarge) {
+            width: 700px;
+            height: 600px;
+            left: 23%;
+        }
+
+        @include breakpoint(large) {
+            width: 650px;
+            height: 550px;
+            left: 20%;
+        }
+
+        @include breakpoint(medium) {
+            width: 700px;
+            height: 650px;
+            left: 15%;
+        }
+
+        @include breakpoint(small) {
+            width: 650px;
+            height: 550px;
+            left: 0;
+        }
+
+        @include breakpoint(xsmall) {
+            width: 550px;
+            height: 450px;
+            left: 0;
+        }
     }
 }
