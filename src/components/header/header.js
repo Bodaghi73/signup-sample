@@ -1,6 +1,7 @@
 //styles
 import "./header.scss";
 
+//imgs
 import logo from "../../assets/imgs/logo.svg";
 import flagIran from "../../assets/imgs/FlagIran.svg";
 
