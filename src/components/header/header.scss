@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.25rem 0;
+
+    &__menu{
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4.5rem;
+    }
+
+    &__tamerlin-span {
+        color: var(--theme-color);
+    }
+
+    &__ul {
+        display: flex;
+    }
+
+    &__li {
+        list-style-type: none;
+        padding-left: 1.5rem;
+    }
+
+    &__menu-link{
+        display: flex;
+    }
+
+    &__langue{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1.25rem;
+        margin-left: 1.25rem;
+        background-color: var(--background-input-color);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &__span-langue{
+        padding-left: 3.5rem;
+    }
+
+    &__signup {
+        padding: 0.625rem 4rem;
+        color: var(--light-color);
+        background-color: var(--theme-color);
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--red-hover-color);
+        }
+    }
+}

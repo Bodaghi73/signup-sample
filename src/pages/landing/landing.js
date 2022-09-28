@@ -1,6 +1,11 @@
+//pages & componnents
+import Header from "../../components/header/header";
+
 function Landing() {
     return (
-        <div>hi</div>
+        <div>
+            <Header></Header>
+        </div>
     );
 }
 
