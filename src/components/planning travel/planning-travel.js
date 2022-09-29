@@ -1,14 +1,11 @@
+//pages & componenets
+import Specifications from '../specifications/specifications';
 //styles
 import './planning-travel.scss';
-
-//imgs
-import Frame from "../../assets/imgs/Frame.svg";
 
 function PlanningTravel() {
     return (
         <div className='plannig-travel'>
-            <img className='plannig-travel__img' src={Frame} alt=""></img>
-
             <div className='plannig-travel__description'>
                 <span className='plannig-travel__do-u-know'>
                     با
@@ -23,7 +20,9 @@ function PlanningTravel() {
                 </span>
             </div>
 
-            
+            <div className='plannig-travel__specifications'>
+                <Specifications></Specifications>
+            </div>
         </div>
     );
 

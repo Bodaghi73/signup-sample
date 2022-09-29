@@ -1,0 +1,25 @@
+.specifications {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 10px;
+
+    &__titr {
+        color: var(--light-color);
+        font-size: 2.25rem;
+    }
+
+    &__select{
+        display: flex;
+        width: 100%;
+    }
+
+    &__select-city{
+        width: 50%;
+        padding-left: 1.5rem;
+    }
+}
