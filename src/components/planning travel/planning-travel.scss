@@ -1,0 +1,62 @@
+.plannig-travel {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("~Frame.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__description {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--light-color);
+    }
+
+    &__do-u-know {
+        margin-bottom: 1.25rem;
+        font-size: 3rem;
+    }
+
+    &__tamerlin {
+        color: var(--theme-color);
+    }
+
+    &__span-text {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    &__span-plan {
+        font-size: 1.5rem;
+    }
+
+    &__plan {
+        position: relative;
+        padding: 0.5rem 1.25rem;
+        margin: 0 1rem;
+        color: var(--light-color);
+        background-color: var(--blue-color);
+        font-size: 1.5rem;
+        border: 3px solid var(--light-color);
+        border-radius: 10px;
+
+        &::before {
+            content: "";
+            width: 50px;
+            height: 3px;
+            background-color: var(--light-color);
+            position: absolute;
+            bottom: -1rem;
+            left: 2.8rem;
+        }
+    }
+
+    &__specifications {
+        width: 50%;
+    }
+}

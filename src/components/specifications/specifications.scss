@@ -1,0 +1,49 @@
+@import '../../assets/styles/variables.scss';
+
+.specifications {
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 10px;
+
+    &__titr {
+        color: var(--light-color);
+        font-size: 2.25rem;
+    }
+
+    &__select{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__select-city{
+        width: 49%;
+    }
+
+    &__swap{
+        position: absolute;
+        top: 6.875rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__register{
+        width: 80%;
+        padding: 1rem 0;
+        margin-top: 4.75rem;
+        color: var(--light-color);
+        background-color: var(--green-plan-color);
+        font-size: 1.25rem;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+}
