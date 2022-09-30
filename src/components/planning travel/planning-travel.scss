@@ -1,6 +1,5 @@
 .plannig-travel {
     height: 100%;
-    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,14 +7,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    &__img {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-    }
 
     &__description {
         width: 50%;
